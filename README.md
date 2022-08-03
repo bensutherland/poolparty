@@ -14,7 +14,7 @@ Ensure that proper permissions are set to execute each package in the pipeline .
 
  It is highly recommended to run the example files provided in the example directory before diving into large datasets.  
 
- PP_example.pdf under 'examples' contains additional detailed information on the pipeline.  
+ pool_party_example.pdf in the folder 'example' contains additional detailed information on the pipeline.  
 
 
 ## Prerequisites

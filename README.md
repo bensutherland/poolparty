@@ -45,6 +45,8 @@ PoolParty requires paired-end .fastq files (compressed or not) and a reference a
 
 ### Reference genome preparation:
 
+Decompress the reference genome as required for samtools faidx      
+
 Prepare the reference genome for bwa mem:
 > $ bwa index -a bwtsw ref_genome.fasta
 
@@ -52,7 +54,7 @@ Index the reference genome for samtools/bcftools:
 > $ samtools faidx ref_genome.fasta
 
 Create dictionary for Picard Tools:
-> $ -jar picard.jar CreateSequenceDictionary REFERENCE=ref_genome.fasta OUTPUT=ref_genome.fasta.dict
+> $ java -jar <full/path/to/picard.jar> CreateSequenceDictionary REFERENCE=ref_genome.fasta OUTPUT=ref_genome.fasta.dict
 
 
 

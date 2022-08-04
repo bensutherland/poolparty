@@ -113,7 +113,7 @@ In addition to fastq files, PPalign also requires an input file named 'samplelis
 >Pool2_R1.fq.gz	2  
 >Pool2_R2.fq.gz	2  
 
-Note that the 'library' or 'population' number must be specified after each file. This number must be an integer from 1-N. See the example samplelist.txt for more information.
+Note that the 'library' or 'population' number must be specified in the line after each file, separated by a tab. This number must be an integer from 1-N. See the `example/samplelist.txt` for more information.
 
 The naming convention of the fastq files is essential. The unique ID identifying the library must occur before the first underscore and must match its paired-end mate. The number after the file designates the population or library that the file belongs to - this is particularly useful if individuals are barcoded or populations were sequenced on different lanes. 
 
